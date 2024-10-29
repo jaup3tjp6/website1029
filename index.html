@@ -22,13 +22,13 @@
     <!-- 漢堡菜單 -->
     <div class="menu" id="menu">
       <div class="menu-content">
-        <a href="#" onclick="openInfoBox('introduction')">介紹</a>
+        <a href="#" onclick="openInfoBox('introduction')">展覽介紹</a>
         <a href="#"onclick="openInfoBox('socialMedia')" >社群媒體</a>
         <a href="#"onclick="openInfoBox('notes')" >注意事項</a>
         <div class="footer">
-          <button>掃描QR code</button>
-          <button>操控替身</button>
-          <button>製作專屬星座</button>
+          <button>掃描</button>
+          <button>替身</button>
+          <button>星座</button>
         </div>
         <button class="layout-switch-button" onclick="toggleLayout()">切換版面</button>
       </div>
@@ -37,8 +37,8 @@
   
     <div class="info-box" id="infoBox" style="display: none;">
         <div class="info-content">
-          <button class="close-button" onclick="closeInfoBox()">關閉</button>
-          <h2 id="infoTitle">資訊標題</h2>
+          <button class="close-button" onclick="closeInfoBox()">X</button>
+          
           <p id="infoText">資訊內容</p>
         </div>
     </div>
@@ -91,7 +91,7 @@
   <!-- 星球介紹 -->
   <div id="planet-info" class="planet-info">
     <p id="planet-info-text">點擊星球顯示介紹</p>
-    <button onclick="closePlanetInfo()">關閉</button>
+    <button onclick="closePlanetInfo()">X</button>
 </div>
 </div>
 

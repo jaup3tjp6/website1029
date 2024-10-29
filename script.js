@@ -110,13 +110,10 @@ function openInfoBox(contentType) {
   
     // 設定彈窗內容
     if (contentType === 'introduction') {
-      infoTitle.textContent = '介紹';
       infoText.textContent = '探索這片神秘的星球地圖，踏上未知的冒險旅程！在這裡，每顆星球都代表著一段精彩的故事與傳奇，等待著你去發現。從深淵之光的璀璨景色到龍的曙光的壯麗風采，每個角落都蘊藏著無窮的驚喜。隨著探索的深入，你將解鎖各式各樣的秘密，了解更多關於星球的過去、現在與未來。這張地圖將帶你穿越時間和空間，體驗不一樣的奇幻世界。探索這片神秘的星球地圖，踏上未知的冒險旅程！在這裡，每顆星球都代表著一段精彩的故事與傳奇，等待著你去發現。從深淵之光的璀璨景色到龍的曙光的壯麗風采，每個角落都蘊藏著無窮的驚喜。隨著探索的深入，你將解鎖各式各樣的秘密，了解更多關於星球的過去、現在與未來。這張地圖將帶你穿越時間和空間，體驗不一樣的奇幻世界。';
     } else if (contentType === 'socialMedia') {
-      infoTitle.textContent = '社群媒體';
       infoText.textContent = '在此加入相關社群媒體的連結或介紹。';
     } else if (contentType === 'notes') {
-      infoTitle.textContent = '注意事項';
       infoText.textContent = '這裡可以顯示使用地圖或注意的相關提示。';
     }
   

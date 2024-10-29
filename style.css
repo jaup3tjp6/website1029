@@ -62,7 +62,7 @@ header {
   position: fixed;
   top: 0;
   right: -100%;
-  width: 80%; /* 在手機上佔80%寬度 */
+  width: 60%; /* 在手機上佔80%寬度 */
   height: 100%;
   background-color: #7D88B1;
   transition: right 0.3s ease; /* 菜單滑入效果 */
@@ -141,41 +141,39 @@ header {
 .planet-F12 img { width: 70px; height: auto; }
 .planet-F13 img { width: 90px; height: auto; }
 
-.layout-1 .planet-F1 { top: 570px; left: 10px; } 
-.layout-1 .planet-F2 { top: 480px; left: 20px; } 
-.layout-1 .planet-F3 { top: 410px; left: 20px; } 
-.layout-1 .planet-F4 { top: 320px; left: 20px; } 
-.layout-1 .planet-F5 { top: 225px; left: 20px; }  
-.layout-1 .planet-F6 { top: 125px; left: 10px; }   
-.layout-1 .planet-F7 { top: 50px; left: 20px; }
-.layout-1 .planet-F8 { top: 40px; left: 110px; }  /* 1-2   */
-.layout-1 .planet-F9 { top: 280px; left: 100px; } 
-.layout-1 .planet-F10 { top: 60px; left: 210px; } 
-.layout-1 .planet-F11 { top: 280px; left: 200px; } 
-.layout-1 .planet-F12 { top: 50px; left: 290px; } 
-.layout-1 .planet-F13 { top: 280px; left: 285px; }
+.layout-1 .planet-F1 { top: 550px; left: 10px; } 
+.layout-1 .planet-F2 { top: 460px; left: 20px; } 
+.layout-1 .planet-F3 { top: 390px; left: 20px; } 
+.layout-1 .planet-F4 { top: 300px; left: 20px; } 
+.layout-1 .planet-F5 { top: 210px; left: 20px; }  
+.layout-1 .planet-F6 { top: 110px; left: 10px; }   
+.layout-1 .planet-F7 { top: 30px; left: 20px; }
+.layout-1 .planet-F8 { top: 20px; left: 110px; }  /* 1-2   */
+.layout-1 .planet-F9 { top: 260px; left: 100px; } 
+.layout-1 .planet-F10 { top: 40px; left: 210px; } 
+.layout-1 .planet-F11 { top: 260px; left: 200px; } 
+.layout-1 .planet-F12 { top: 30px; left: 290px; } 
+.layout-1 .planet-F13 { top: 260px; left: 285px; }
 
 
 /* layout-3 的星球排列 */
 
-.layout-3 .planet-F1 { top: 70px; left: 30px; }
-.layout-3 .planet-F4 { top: 90px; left: 260px; }
-.layout-3 .planet-F13 { top: 30px; left: 150px; }
+.layout-3 .planet-F1 { top: 50px; left: 30px; }
+.layout-3 .planet-F4 { top: 70px; left: 260px; }
+.layout-3 .planet-F13 { top: 20px; left: 150px; }
 
-.layout-3 .planet-F3 { top: 430px; left: 260px; }
-.layout-3 .planet-F10 { top: 250px; left: 260px; }
-.layout-3 .planet-F11 { top: 330px; left: 190px; }
+.layout-3 .planet-F3 { top: 400px; left: 260px; }
+.layout-3 .planet-F10 { top: 240px; left: 280px; }
+.layout-3 .planet-F11 { top: 310px; left: 190px; }
 
-.layout-3 .planet-F6 { top: 300px; left: 40px; }
-.layout-3 .planet-F8 { top: 180px; left: 25px; }
-.layout-3 .planet-F9 { top: 130px; left: 150px; }
-.layout-3 .planet-F12 { top: 230px; left: 150px; }
+.layout-3 .planet-F6 { top: 280px; left: 40px; }
+.layout-3 .planet-F8 { top: 160px; left: 25px; }
+.layout-3 .planet-F9 { top: 120px; left: 130px; }
+.layout-3 .planet-F12 { top: 210px; left: 180px; }
 
-
-
-.layout-3 .planet-F2 { top: 420px; left: 30px; }
-.layout-3 .planet-F5 { top: 530px; left: 50px; }
-.layout-3 .planet-F7 { top: 440px; left: 150px; }
+.layout-3 .planet-F2 { top: 380px; left: 30px; }
+.layout-3 .planet-F5 { top: 470px; left: 70px; }
+.layout-3 .planet-F7 { top: 420px; left: 150px; }
 
 
 /* 星球介紹框樣式 */
