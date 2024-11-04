@@ -26,11 +26,12 @@
         <a href="#"onclick="openInfoBox('socialMedia')" >社群媒體</a>
         <a href="#"onclick="openInfoBox('notes')" >注意事項</a>
         <div class="footer">
-          <button>掃描</button>
-          <button>替身</button>
-          <button>星座</button>
+          <!-- 替換掃描、替身、星座按鈕為圖片 -->
+          <img src="img/QR.png" alt="掃描">
+          <img src="img/替身.png" alt="替身">
+          <img src="img/星座.png" alt="星座">
         </div>
-        <button class="layout-switch-button" onclick="toggleLayout()">切換版面</button>
+        <img src="img/切換版面.png" alt="切換版面" class="layout-switch-button" onclick="toggleLayout()">
       </div>
     </div>
 
@@ -43,7 +44,6 @@
         </div>
     </div>
   
-
 
   <!-- 星球地圖 -->
   <div id="planet-map" class="layout-1">
@@ -90,8 +90,8 @@
 
   <!-- 星球介紹 -->
   <div id="planet-info" class="planet-info">
-    <p id="planet-info-text">點擊星球顯示介紹</p>
-    <button onclick="closePlanetInfo()">X</button>
+    <img id="planet-info-image" src="" alt="星球圖片">
+    <button class="close-button" onclick="closePlanetInfo()">X</button>
 </div>
 </div>
 
