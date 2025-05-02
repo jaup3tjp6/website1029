@@ -169,11 +169,11 @@ body::before {
 .area.active { display: block; }
 
 #area1 {
-    background: url('bg-left.png') no-repeat center center;
+    background: url('星球/bg-left.png') no-repeat center center;
     background-size: cover;
 }
 #area2 {
-    background: url('bg-right.png') no-repeat center center;
+    background: url('星球/bg-right.png') no-repeat center center;
     background-size: cover;
 }
 
