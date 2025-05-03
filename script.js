@@ -212,4 +212,47 @@ window.addEventListener('DOMContentLoaded', () => {
       setTimeout(() => opening.remove(), 1000);
     }, 1800);
   }
-}); 
+});
+
+// 隨機在畫面中加入雲朵
+window.addEventListener('DOMContentLoaded', () => {
+    const cloudImages = ['星球/wall_1.png', '星球/wall_2.png', '星球/wall_3.png'];
+    const cloudCount = 5 + Math.floor(Math.random() * 4); // 5~8 朵雲
+    const clouds = [];
+    for (let i = 0; i < cloudCount; i++) {
+      const img = document.createElement('img');
+      img.src = cloudImages[Math.floor(Math.random() * cloudImages.length)];
+      img.className = 'floating-cloud';
+      img.style.position = 'fixed';
+      img.style.zIndex = 2;
+      img.style.pointerEvents = 'none';
+      img.style.width = (80 + Math.random() * 120) + 'px';
+      img.style.opacity = 0.7 + Math.random() * 0.2;
+      const top = Math.random() * 70;
+      const left = Math.random() * 80;
+      img.style.top = top + '%';
+      img.style.left = left + '%';
+      document.body.appendChild(img);
+  
+      // 給每朵雲一個動畫屬性
+      clouds.push({
+        el: img,
+        baseLeft: left,
+        direction: Math.random() > 0.5 ? 1 : -1,
+        range: 10 + Math.random() * 20, // 飄動範圍
+        speed: 0.5 + Math.random() * 0.5, // 飄動速度
+        phase: Math.random() * Math.PI * 2 // 初始相位
+      });
+    }
+  
+    // 持續動畫
+    function animateClouds(time) {
+      clouds.forEach(cloud => {
+        // 讓雲左右來回飄動
+        const offset = Math.sin(time / 2000 * cloud.speed + cloud.phase) * cloud.range;
+        cloud.el.style.left = `calc(${cloud.baseLeft}% + ${offset}px)`;
+      });
+      requestAnimationFrame(animateClouds);
+    }
+    requestAnimationFrame(animateClouds);
+  });
