@@ -95,11 +95,17 @@ if (!fullscreenImgDiv) {
 menuButton.addEventListener('click', () => {
     menu.classList.toggle('active');
     menuButton.classList.toggle('active');
+    if (menu.classList.contains('active')) {
+      hideClouds();
+    } else {
+      showClouds();
+    }
 });
 
 closeMenu.addEventListener('click', () => {
     menu.classList.remove('active');
     menuButton.classList.remove('active');
+    showClouds();
 });
 
 // 區域切換
@@ -149,6 +155,7 @@ fullscreenImgDiv.onclick = function() {
 // 關閉彈窗
 function closeBoothInfo() {
     modal.classList.remove('active');
+    showClouds();
 }
 
 closeModal.addEventListener('click', closeBoothInfo);
@@ -199,6 +206,7 @@ function showMenuMessage(message) {
     `;
     modalContent.innerHTML = content;
     modal.classList.add('active');
+    hideClouds();
 }
 
 // 初始化顯示第一個區域
@@ -256,3 +264,10 @@ window.addEventListener('DOMContentLoaded', () => {
     }
     requestAnimationFrame(animateClouds);
   });
+
+function hideClouds() {
+  document.querySelectorAll('.floating-cloud').forEach(c => c.classList.add('hide'));
+}
+function showClouds() {
+  document.querySelectorAll('.floating-cloud').forEach(c => c.classList.remove('hide'));
+}

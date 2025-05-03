@@ -616,7 +616,14 @@ body::before {
 }
 
 .floating-cloud {
+  z-index: 10;
   filter: blur(0.5px) drop-shadow(0 2px 8px rgba(0,0,0,0.08));
   user-select: none;
   transition: opacity 1s, transform 10s linear;
+  position: fixed;
+  pointer-events: none;
+}
+
+.floating-cloud.hide {
+  opacity: 0 !important;
 } 
