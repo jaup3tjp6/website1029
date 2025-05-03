@@ -129,6 +129,7 @@ nextButton.addEventListener('click', () => {
 document.querySelectorAll('.planet').forEach(planet => {
     planet.addEventListener('click', () => {
         const boothId = planet.getAttribute('data-booth');
+        planet.classList.add('active');
         showBoothInfo(boothId);
     });
 });
@@ -170,9 +171,13 @@ document.addEventListener('keydown', (e) => {
 
 // 選單連結點擊事件
 const menuMessages = {
-    '#about': '這是關於我們的介紹內容。',
-    '#contact': '這是聯絡方式的內容。',
-    '#help': '這是使用說明的內容。'
+    '#about': '我們是114級起承轉合起，歡迎您的參觀與指教！',
+    '#contact': `<div style="text-align:left;">
+    <b><a href="https://www.facebook.com/ntcudct114" target="_blank">Facebook</a></b>
+    <span style="display:inline-block; width:32px;"></span>
+    <b><a href="https://www.instagram.com/ntcudct114?fbclid=IwY2xjawKC0yhleHRuA2FlbQIxMABicmlkETFTeUZlbjQzMGhJb3FBekhtAR4qeV1BG4YGL9jKlj9iAWSLiTV8QF7bDBwpzaqG_XjjCv3PbBGJNugyfexlPw_aem_6KXOGp4Y1a0oUlhsQzwpFQ" target="_blank">Instagram</a></b>
+</div>`,
+    '#help': '本地圖網站可點擊各展區星球，查看展位詳細資訊。點擊下方圓點或「下一區」可切換展區。星球初始為黑色，點擊後會顯示原本顏色。'
 };
 document.querySelectorAll('.menu ul li a').forEach(link => {
     link.addEventListener('click', (e) => {
@@ -197,4 +202,14 @@ function showMenuMessage(message) {
 }
 
 // 初始化顯示第一個區域
-switchArea(0); 
+switchArea(0);
+
+window.addEventListener('DOMContentLoaded', () => {
+  const opening = document.getElementById('opening-animation');
+  if (opening) {
+    setTimeout(() => {
+      opening.classList.add('hide');
+      setTimeout(() => opening.remove(), 1000);
+    }, 1800);
+  }
+}); 
